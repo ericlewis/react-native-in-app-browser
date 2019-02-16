@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Object `InAppBrowser` with methods:
+  - `open` as a drop-in replacement for `openInApp`,
+  - `configure` as a drop-in replacement for `initialize`,
+  - `close` as a drop-in replacement for `closeInAppInstance`.
+
+### Deprecated
+
+The following functions have been deprecated. Please see
+[Deprecated Features](https://github.com/matt-block/react-native-in-app-browser#deprecated-features) for migration paths and rationale for these changes.
+
+- `openInApp`, use `InAppBrowser.open` instead.
+- `initialize`, use `InAppBrowser.configure` instead.
+- `closeInAppInstance`, use `InAppBrowser.close` instead.
+
+## [Unreleased]
+
+### Added
+
 - Compatibility with React Native `0.59.0`.
 
 ### Fixed
